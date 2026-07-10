@@ -1,155 +1,119 @@
-# 🗺️ AWS Cloud & DevOps Learning Roadmap
+# 🗺 Cloud & DevOps Professional Roadmap
 
-> Professional learning roadmap focused on becoming an AWS Cloud Engineer, DevOps Engineer and AWS Solutions Architect through hands-on laboratories, real-world projects and technical documentation.
+> Professional learning path to become an AWS Cloud Engineer, DevOps Engineer and Solutions Architect through hands-on laboratories and real-world projects.
 
 ---
 
 # 🎯 Professional Goal
 
-Develop the technical and practical skills required to design, implement, automate and operate cloud solutions on Amazon Web Services (AWS), applying DevOps practices, Infrastructure as Code, containerization and cloud security.
+Build the technical skills required to design, deploy, automate and operate cloud-native solutions using AWS and DevOps best practices.
 
-The final objective is to build a professional portfolio that demonstrates practical experience and supports future certifications and technical interviews.
-
----
-
-# 📅 Estimated Duration
-
-**8 Months**
-
-| Phase | Estimated Duration |
-|--------|-------------------:|
-| Phase 0 - Professional Setup | 1 Week |
-| Phase 1 - AWS Foundations | 4 Weeks |
-| Phase 2 - AWS Networking | 3 Weeks |
-| Phase 3 - Linux & Containers | 4 Weeks |
-| Phase 4 - Infrastructure as Code | 3 Weeks |
-| Phase 5 - Kubernetes | 4 Weeks |
-| Phase 6 - CI/CD | 3 Weeks |
-| Phase 7 - Monitoring & Security | 3 Weeks |
-| Phase 8 - Enterprise Project | 6 Weeks |
+The goal is to build a professional portfolio that demonstrates practical experience in Cloud Engineering.
 
 ---
 
-# 🛤️ Learning Roadmap
+# 🚀 Learning Path
 
-## Phase 0 – Professional Setup
+| Level | Area | Status |
+|--------|------|:------:|
+| Level 1 | Cloud Foundations | 🟨 |
+| Level 2 | Cloud Networking | ⬜ |
+| Level 3 | Cloud Compute | ⬜ |
+| Level 4 | Cloud Databases | ⬜ |
+| Level 5 | Containers | ⬜ |
+| Level 6 | Infrastructure as Code | ⬜ |
+| Level 7 | Kubernetes | ⬜ |
+| Level 8 | DevOps | ⬜ |
+| Level 9 | Observability | ⬜ |
+| Level 10 | Enterprise Architecture | ⬜ |
 
-### Objective
+---
 
-Prepare a professional development environment.
+# Level 1 – Cloud Foundations
 
 ### Topics
 
 - Git
 - GitHub
-- Visual Studio Code
-- OpenSSH
-- Linux Fundamentals
-
-### Deliverables
-
-- Professional GitHub Portfolio
-- SSH Configuration
-- Git Workflow
-- Repository Structure
-
----
-
-## Phase 1 – AWS Foundations
-
-### Objective
-
-Understand the core AWS services and security concepts.
+- VS Code
+- Linux
+- SSH
+- AWS IAM
+- Amazon EC2
+- Amazon S3
 
 ### Laboratories
 
-- ✅ Lab 01 – IAM
-- ✅ Lab 02 – EC2
-- ⬜ Lab 03 – Amazon S3
-- ⬜ Lab 04 – Amazon VPC
-- ⬜ Lab 05 – Amazon RDS
-- ⬜ Lab 06 – IAM Roles
-- ⬜ Lab 07 – CloudWatch
-- ⬜ Lab 08 – CloudTrail
-
-### Skills
-
-- Identity Management
-- Compute
-- Storage
-- Networking
-- Monitoring
-- Security
+- ✅ IAM
+- ✅ EC2
+- ⬜ Amazon S3
 
 ---
 
-## Phase 2 – AWS Networking
-
-### Objective
-
-Design secure cloud networking architectures.
+# Level 2 – Cloud Networking
 
 ### Topics
 
 - VPC
-- Public & Private Subnets
+- Public Subnets
+- Private Subnets
 - Route Tables
 - Internet Gateway
 - NAT Gateway
-- Network ACL
 - Security Groups
-
-### Deliverables
-
-- Multi-tier Network Architecture
+- Network ACL
 
 ---
 
-## Phase 3 – Linux & Containers
-
-### Objective
-
-Deploy applications using containers.
+# Level 3 – Cloud Compute
 
 ### Topics
 
-- Linux Administration
-- Bash
-- Docker
-- Docker Compose
-- Docker Hub
-
-### Deliverables
-
-- Containerized .NET Application
+- EC2
+- EBS
+- EFS
+- Auto Scaling
+- Load Balancer
+- AMI
 
 ---
 
-## Phase 4 – Infrastructure as Code
+# Level 4 – Cloud Databases
 
-### Objective
+### Topics
 
-Provision AWS infrastructure using code.
+- Amazon RDS
+- Amazon Aurora
+- DynamoDB
+- ElastiCache
+
+---
+
+# Level 5 – Containers
+
+### Topics
+
+- Docker
+- Docker Compose
+- Docker Hub
+- Amazon ECS
+- Amazon EKS
+
+---
+
+# Level 6 – Infrastructure as Code
 
 ### Topics
 
 - Terraform
 - Variables
 - Modules
-- State Management
+- State
 - Remote Backend
-
-### Deliverables
-
-- Complete AWS Infrastructure deployed with Terraform
 
 ---
 
-## Phase 5 – Kubernetes
-
-### Objective
-
-Deploy containerized applications using Kubernetes.
+# Level 7 – Kubernetes
 
 ### Topics
 
@@ -157,147 +121,69 @@ Deploy containerized applications using Kubernetes.
 - Deployments
 - Services
 - Ingress
+- Helm
 - ConfigMaps
 - Secrets
-- Helm
-
-### Deliverables
-
-- Kubernetes Cluster
-- Production Deployment
 
 ---
 
-## Phase 6 – CI/CD
-
-### Objective
-
-Automate software delivery.
+# Level 8 – DevOps
 
 ### Topics
 
 - GitHub Actions
 - Jenkins
-- AWS CodePipeline
-- AWS CodeBuild
-- AWS CodeDeploy
-
-### Deliverables
-
-- Complete CI/CD Pipeline
+- SonarQube
+- Nexus
+- ArgoCD
 
 ---
 
-## Phase 7 – Monitoring & Security
-
-### Objective
-
-Implement monitoring, logging and security.
+# Level 9 – Monitoring & Observability
 
 ### Topics
 
-- CloudWatch
+- Amazon CloudWatch
 - CloudTrail
 - Prometheus
 - Grafana
 - ELK Stack
 
-### Deliverables
-
-- Monitoring Dashboard
-- Centralized Logging
-- Cloud Alerts
-
 ---
 
-## Phase 8 – Enterprise Cloud Project
+# Level 10 – Enterprise Cloud Platform
 
-### Objective
+### Final Project
 
-Build a complete production-ready cloud platform.
+Enterprise platform deployed on AWS including:
 
-### Components
-
-- Amazon EC2
-- Amazon S3
-- Amazon RDS
+- Networking
+- Compute
+- Storage
+- Databases
 - Docker
 - Kubernetes
 - Terraform
-- GitHub Actions
-- CloudWatch
-
-### Deliverables
-
-- Production Architecture
-- Infrastructure as Code
 - CI/CD
 - Monitoring
-- Technical Documentation
+- Security
 
 ---
 
-# 🏆 Certification Roadmap
+# 🎓 Certifications
 
-| Certification | Status |
-|---------------|:------:|
-| AWS Certified Cloud Practitioner | ⬜ |
-| AWS Solutions Architect – Associate | ⬜ |
-| HashiCorp Terraform Associate | ⬜ |
-| AWS Developer – Associate | ⬜ |
-| Certified Kubernetes Administrator (CKA) | ⬜ |
-| AWS DevOps Engineer – Professional | ⬜ |
-
----
-
-# 💼 GitHub Portfolio Goals
-
-By the end of this roadmap the repository should include:
-
-- 20+ Hands-on laboratories
-- Architecture diagrams
-- Technical documentation
-- Infrastructure as Code examples
-- CI/CD pipelines
-- Enterprise cloud project
-- Troubleshooting guides
+- AWS Certified Cloud Practitioner
+- AWS Solutions Architect – Associate
+- AWS Developer – Associate
+- AWS SysOps Administrator – Associate
+- HashiCorp Terraform Associate
+- Certified Kubernetes Administrator
+- AWS DevOps Engineer Professional
 
 ---
 
-# 🚀 Final Enterprise Project
+# 📊 Current Progress
 
-The final project will consist of a production-oriented AWS platform including:
+Cloud Foundations
 
-- Secure network architecture
-- Linux servers
-- Docker containers
-- Kubernetes
-- Terraform
-- CI/CD
-- Monitoring
-- Logging
-- Infrastructure documentation
-
----
-
-# 📊 Progress Tracker
-
-| Phase | Status |
-|--------|:------:|
-| Professional Setup | ✅ |
-| AWS Foundations | 🟨 |
-| AWS Networking | ⬜ |
-| Linux & Containers | ⬜ |
-| Infrastructure as Code | ⬜ |
-| Kubernetes | ⬜ |
-| CI/CD | ⬜ |
-| Monitoring & Security | ⬜ |
-| Enterprise Project | ⬜ |
-
----
-
-# 📌 Current Version
-
-```text
-v0.1.0
-```
+██████░░░░░░░░░░░░░░ 20%
