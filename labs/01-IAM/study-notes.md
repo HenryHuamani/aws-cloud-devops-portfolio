@@ -1,143 +1,252 @@
-## `notas.md`
+# AWS IAM - Study Notes
 
-````markdown
-# Notes – AWS IAM
+---
 
-## What is IAM?
+# What is AWS IAM?
 
-AWS Identity and Access Management (IAM) is the AWS service used to manage identities, authentication and permissions for access to AWS resources.
+AWS Identity and Access Management (IAM) is the AWS service responsible for managing identities and controlling access to AWS resources securely.
 
 IAM allows administrators to define:
 
-- Who can access AWS.
-- Which resources can be accessed.
-- Which actions can be performed.
-- Under which conditions access is allowed.
+- Who can access AWS resources.
+- What actions they can perform.
+- Which resources they can access.
+- Under which conditions access is granted.
 
-## Main IAM Components
+IAM is a **Global AWS Service**, meaning its configuration applies across all AWS Regions.
 
-### Root User
+---
 
-The root user is created when the AWS account is registered.
+# Core Components
 
-It has full access to all AWS services and account settings.
+## IAM Users
 
-The root user should only be used for exceptional administrative tasks, such as:
-
-- Account recovery.
-- Billing configuration.
-- Closing the AWS account.
-- Managing certain global security settings.
-
-It should not be used for daily administration.
-
-### IAM User
-
-An IAM user represents a person or application that requires access to AWS.
-
-An IAM user may have:
-
-- Console access.
-- Programmatic access.
-- Password.
-- Access keys.
-- Permissions assigned directly or through groups.
-
-### IAM Group
-
-An IAM group is a collection of IAM users.
-
-Groups simplify permissions management because permissions can be assigned to the group instead of individually to each user.
-
-Example:
-
-```text
-Administrators
-Developers
-Auditors
-ReadOnlyUsers
-````
-
-### IAM Policy
-
-An IAM policy is a JSON document that defines permissions.
-
-A policy specifies:
-
-* Effect: Allow or Deny.
-* Actions.
-* Resources.
-* Optional conditions.
-
-Example structure:
-
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": "s3:ListAllMyBuckets",
-      "Resource": "*"
-    }
-  ]
-}
-```
-
-### IAM Role
-
-An IAM role is an identity with permissions that can be assumed temporarily.
-
-Roles are commonly used by:
-
-* AWS services.
-* Applications.
-* Federated users.
-* Resources such as EC2 instances and Lambda functions.
-
-Unlike IAM users, roles do not normally use permanent credentials.
-
-## Authentication vs Authorization
-
-### Authentication
-
-Verifies who the user is.
+An IAM User represents a single person or application requiring access to AWS.
 
 Examples:
 
-* Username and password.
-* MFA.
-* Access key.
-* Federated identity.
+- Cloud Administrator
+- Developer
+- DevOps Engineer
+- CI/CD Pipeline
 
-### Authorization
+Best Practices
 
-Determines what the authenticated identity is allowed to do.
+- One user per person.
+- Never share credentials.
+- Enable MFA.
+- Avoid long-term Access Keys when possible.
 
-Authorization is controlled through IAM policies.
+---
 
-## Multi-Factor Authentication
+## IAM Groups
 
-MFA adds an additional authentication factor.
+Groups simplify permission management.
 
-It protects the account even if the password is compromised.
+Instead of assigning permissions to every user individually, permissions are attached to a group.
 
-Recommended usage:
+Example
 
-* Root account.
-* Administrative IAM users.
-* Privileged users.
+Administrators
 
-## Principle of Least Privilege
+├── Henry
 
-The principle of least privilege means granting only the permissions required to complete a task.
+├── John
 
-Example:
+├── Maria
 
-A user who only needs to read files from S3 should not receive full administrative permissions.
+Benefits
 
-## Laboratory Decisions
+- Easier administration.
+- Consistent permissions.
+- Less configuration errors.
 
-For this introductory laboratory, the managed policy `AdministratorAccess` was assigned to the `Administrators` group.
+---
 
-This configuration is acceptable for an isolated learning environment, but in production environments permissions should be more restrictive and aligned with the user's responsibilities.
+## IAM Policies
+
+Policies are JSON documents that define permissions.
+
+Policies determine:
+
+- Allowed actions
+- Denied actions
+- Resources
+- Conditions
+
+Example
+
+```json
+{
+  "Effect":"Allow",
+  "Action":"ec2:*",
+  "Resource":"*"
+}
+```
+
+Types
+
+- AWS Managed Policies
+- Customer Managed Policies
+- Inline Policies
+
+---
+
+## IAM Roles
+
+Roles provide temporary permissions.
+
+Unlike Users, Roles do not have permanent credentials.
+
+Typical use cases
+
+- EC2 accessing S3
+- Lambda accessing DynamoDB
+- Cross-account access
+
+---
+
+## Multi-Factor Authentication (MFA)
+
+MFA adds a second authentication factor.
+
+Authentication
+
+Password
+
++
+
+Temporary Code
+
+Benefits
+
+- Prevents credential theft.
+- Protects privileged accounts.
+- Recommended for every administrator.
+
+---
+
+# Authentication vs Authorization
+
+Authentication
+
+Who are you?
+
+Authorization
+
+What are you allowed to do?
+
+---
+
+# IAM Best Practices
+
+✔ Never use the Root User.
+
+✔ Enable MFA.
+
+✔ Apply Least Privilege.
+
+✔ Use IAM Groups.
+
+✔ Prefer Roles over Access Keys.
+
+✔ Rotate credentials.
+
+✔ Monitor IAM activity using CloudTrail.
+
+---
+
+# AWS Managed Policies
+
+AWS provides predefined policies.
+
+Examples
+
+AdministratorAccess
+
+ReadOnlyAccess
+
+PowerUserAccess
+
+AmazonS3FullAccess
+
+AmazonEC2FullAccess
+
+Advantages
+
+- Maintained by AWS.
+- Easy to use.
+- Frequently updated.
+
+---
+
+# Principle of Least Privilege
+
+Users should receive only the permissions required to perform their tasks.
+
+Never assign AdministratorAccess unless absolutely necessary.
+
+---
+
+# Root User
+
+The Root User has unrestricted access.
+
+Use it only for:
+
+- Initial account setup.
+- Billing configuration.
+- Closing the AWS account.
+
+For daily administration, always use IAM Users.
+
+---
+
+# Lab Summary
+
+During this laboratory the following tasks were completed:
+
+- Created an IAM administrative user.
+- Created the Administrators group.
+- Attached AdministratorAccess policy.
+- Enabled Virtual MFA.
+- Logged into AWS using IAM credentials.
+
+---
+
+# Key Concepts
+
+| Concept | Description |
+|----------|-------------|
+| IAM | Identity management service |
+| User | Individual identity |
+| Group | Collection of users |
+| Policy | Permission definition |
+| Role | Temporary permissions |
+| MFA | Additional authentication factor |
+| Least Privilege | Minimum required permissions |
+| Root User | AWS account owner |
+
+---
+
+# Interview Tip
+
+A very common interview question is:
+
+"What is the difference between an IAM User and an IAM Role?"
+
+Expected answer:
+
+- IAM Users have long-term credentials.
+- IAM Roles provide temporary credentials through AWS STS.
+- Roles are recommended for AWS services and cross-account access.
+
+---
+
+# References
+
+https://docs.aws.amazon.com/IAM/
+
+https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html
+
+https://docs.aws.amazon.com/wellarchitected/
