@@ -1,129 +1,359 @@
-# Commands – Amazon EC2 Laboratory
+# Amazon EC2 - Commands Reference
 
-## Connect to the EC2 Instance
+This document contains the AWS Console navigation paths, AWS CLI commands, Linux commands, PowerShell commands, Git commands, and troubleshooting commands used during **Lab 02 – Amazon Elastic Compute Cloud (EC2)**.
 
-```powershell
-ssh -i .\henry-key.pem ubuntu@PUBLIC_DNS
+---
+
+# AWS Console Navigation
+
+## Launch EC2 Instance
+
+AWS Console
+
+→ EC2
+
+→ Instances
+
+→ Launch Instance
+
+---
+
+## Instance Configuration
+
+| Property | Value |
+|----------|-------|
+| Name | Server-Lab01 |
+| AMI | Ubuntu Server 24.04 LTS |
+| Instance Type | t2.micro |
+| Key Pair | henry-key.pem |
+| Storage | 8 GB gp3 |
+
+---
+
+## Configure Security Group
+
+Inbound Rules
+
+| Type | Protocol | Port | Source |
+|------|----------|------|--------|
+| SSH | TCP | 22 | My IP |
+
+---
+
+## Connect to Instance
+
+AWS Console
+
+→ EC2
+
+→ Instances
+
+→ Select Instance
+
+→ Connect
+
+→ SSH Client
+
+---
+
+# AWS CLI Commands
+
+## Check AWS CLI Version
+
+```bash
+aws --version
 ```
 
-Example:
+---
 
-```powershell
-ssh -i .\henry-key.pem ubuntu@ec2-example.compute.amazonaws.com
+## Configure AWS CLI
+
+```bash
+aws configure
 ```
 
-Do not publish the private key or use a real public address in documentation when it is unnecessary.
+---
 
-## Enable Detailed SSH Output
+## List EC2 Instances
 
-```powershell
-ssh -vvv -i .\henry-key.pem ubuntu@PUBLIC_DNS
+```bash
+aws ec2 describe-instances
 ```
 
-The `-vvv` option displays detailed diagnostic information about the SSH connection.
+---
 
-## Review Key Permissions in Windows
+## Start an Instance
+
+```bash
+aws ec2 start-instances \
+--instance-ids i-xxxxxxxxxxxxxxxxx
+```
+
+---
+
+## Stop an Instance
+
+```bash
+aws ec2 stop-instances \
+--instance-ids i-xxxxxxxxxxxxxxxxx
+```
+
+---
+
+## Reboot an Instance
+
+```bash
+aws ec2 reboot-instances \
+--instance-ids i-xxxxxxxxxxxxxxxxx
+```
+
+---
+
+## Terminate an Instance
+
+```bash
+aws ec2 terminate-instances \
+--instance-ids i-xxxxxxxxxxxxxxxxx
+```
+
+---
+
+## Describe Security Groups
+
+```bash
+aws ec2 describe-security-groups
+```
+
+---
+
+## Describe Key Pairs
+
+```bash
+aws ec2 describe-key-pairs
+```
+
+---
+
+# SSH Commands
+
+## Change Private Key Permissions (Linux/macOS)
+
+```bash
+chmod 400 henry-key.pem
+```
+
+---
+
+## Connect via SSH
+
+```bash
+ssh -i "henry-key.pem" \
+ubuntu@ec2-public-ip
+```
+
+Example
+
+```bash
+ssh -i "henry-key.pem" \
+ubuntu@ec2-3-145-109-160.us-east-2.compute.amazonaws.com
+```
+
+---
+
+# Windows PowerShell Commands
+
+## Current Directory
+
+```powershell
+pwd
+```
+
+---
+
+## List Files
+
+```powershell
+dir
+```
+
+---
+
+## Verify SSH Version
+
+```powershell
+ssh -V
+```
+
+---
+
+## Connect to EC2
+
+```powershell
+ssh -i .\henry-key.pem ubuntu@ec2-public-dns
+```
+
+---
+
+## Verbose SSH Connection
+
+```powershell
+ssh -vvv -i .\henry-key.pem ubuntu@ec2-public-dns
+```
+
+---
+
+## View File Permissions
 
 ```powershell
 icacls .\henry-key.pem
 ```
 
-## Remove Inherited Permissions
+---
+
+## Disable Inherited Permissions
 
 ```powershell
 icacls .\henry-key.pem /inheritance:r
 ```
 
-## Remove Access for Authenticated Users
+---
+
+## Remove Built-in Users Permissions
 
 ```powershell
-icacls .\henry-key.pem /remove "NT AUTHORITY\Authenticated Users"
+icacls .\henry-key.pem /remove "BUILTIN\Users"
 ```
 
-## Remove Access for the Built-in Users Group
+---
 
-```powershell
-icacls .\henry-key.pem /remove "BUILTIN\Usuarios"
-```
+# Linux Commands
 
-The group name may appear as `BUILTIN\Users` on English Windows installations.
-
-## Grant Read Permission to the Owner
-
-```powershell
-icacls .\henry-key.pem /grant "DESKTOP-MTQQR2P\PC:(R)"
-```
-
-Replace the computer and user name according to the local environment.
-
-## Verify the Current Linux User
-
-```bash
-whoami
-```
-
-## Display the Hostname
-
-```bash
-hostname
-```
-
-## Display the Current Directory
+## Current Directory
 
 ```bash
 pwd
 ```
 
-## List Files and Directories
+---
+
+## List Files
 
 ```bash
-ls
+ls -la
 ```
 
-## Display Operating-System Information
+---
+
+## Show Current User
+
+```bash
+whoami
+```
+
+---
+
+## Operating System Information
 
 ```bash
 cat /etc/os-release
 ```
 
-## Display CPU Information
+---
+
+## Kernel Version
 
 ```bash
-lscpu
+uname -a
 ```
 
-## Display Memory Usage
+---
 
-```bash
-free -h
-```
-
-## Display Disk Usage
+## Disk Usage
 
 ```bash
 df -h
 ```
 
-## Display IP Configuration
+---
+
+## Memory Information
 
 ```bash
-ip address
+free -h
 ```
 
-## Update Package Information
+---
+
+## Uptime
 
 ```bash
-sudo apt update
+uptime
 ```
 
-## Install Available Package Updates
+---
+
+# Git Commands
+
+## Create Feature Branch
 
 ```bash
-sudo apt upgrade -y
+git checkout -b feature/lab-02-ec2
 ```
 
-## Exit the SSH Session
+---
+
+## Verify Branch
 
 ```bash
-exit
+git branch
 ```
+
+---
+
+## Check Repository Status
+
+```bash
+git status
+```
+
+---
+
+## Stage Changes
+
+```bash
+git add .
+```
+
+---
+
+## Commit Changes
+
+```bash
+git commit -m "Complete Lab 02 EC2 documentation"
+```
+
+---
+
+## Push Feature Branch
+
+```bash
+git push origin feature/lab-02-ec2
+```
+
+---
+
+## Merge into Main
+
+```bash
+git checkout main
+git merge feature/lab-02-ec2
+git push origin main
+```
+
+---
+
+# Notes
+
+This laboratory was performed primarily through the **AWS Management Console**.
+
+AWS CLI commands are included to introduce automation concepts and prepare for future Infrastructure as Code (IaC) laboratories using Terraform and CloudFormation.
