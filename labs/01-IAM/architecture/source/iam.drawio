@@ -1,0 +1,162 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="QNslGalEl4QgZ9oglIL7">
+    <mxGraphModel dx="1671" dy="965" grid="1" gridSize="20" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="q9i2-7_oWKg2bWcuqwcx-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" value="" vertex="1">
+          <mxGeometry height="860" width="1560" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="q9i2-7_oWKg2bWcuqwcx-1" parent="1" style="text;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;fontStyle=1;align=center;" value="AWS IAM Architecture" vertex="1">
+          <mxGeometry height="60" width="280" x="40" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="q9i2-7_oWKg2bWcuqwcx-4" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="20" y="800" as="sourcePoint" />
+            <mxPoint x="1580" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q9i2-7_oWKg2bWcuqwcx-6" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="20" y="100" as="sourcePoint" />
+            <mxPoint x="1580" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-2" edge="1" parent="1" source="q9i2-7_oWKg2bWcuqwcx-27" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.511;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="q9i2-7_oWKg2bWcuqwcx-27" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="530" as="sourcePoint" />
+            <mxPoint x="310" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-3" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400.0028571428578" y="100" as="sourcePoint" />
+            <mxPoint x="400" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-6" parent="1" style="text;whiteSpace=wrap;" value="Repository&#xa;aws-cloud-devops-portfolio" vertex="1">
+          <mxGeometry height="60" width="160" x="80" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-13" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="Lab 01 • Identity &amp;amp; Access Management&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="320" x="60" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-14" parent="1" style="text;whiteSpace=wrap;html=1;" value="Version&#xa;v1.0" vertex="1">
+          <mxGeometry height="60" width="100" x="420" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-15" parent="1" style="text;whiteSpace=wrap;html=1;" value="Author&#xa;Henry Junior Huamani" vertex="1">
+          <mxGeometry height="60" width="180" x="660" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-16" parent="1" style="text;whiteSpace=wrap;html=1;" value="Updated&#xa;2026-07" vertex="1">
+          <mxGeometry height="60" width="100" x="940" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-21" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1120" y="450" as="sourcePoint" />
+            <mxPoint x="1120" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-23" parent="1" style="text;whiteSpace=wrap;html=1;" value="🟢 COMPLETED" vertex="1">
+          <mxGeometry height="30" width="100" x="1460" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="160" x="40" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-24" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="📘 Service Overview" vertex="1">
+          <mxGeometry height="60" width="160" x="40" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="160" x="420" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-25" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="🏗 Core Architecture" vertex="1">
+          <mxGeometry height="60" width="160" x="420" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="160" x="40" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-26" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="🧪 Laboratory" vertex="1">
+          <mxGeometry height="60" width="140" x="40" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="180" x="1140" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-27" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="🛡 AWS Best Practices" vertex="1">
+          <mxGeometry height="60" width="180" x="1140" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-34" parent="1" style="text;whiteSpace=wrap;fontSize=16;" value="Purpose&#xa;• Manage identities&#xa;• Authentication&#xa;• Authorization&#xa;• Access control&#xa;&#xa;Main Components&#xa;• Users&#xa;• Groups&#xa;• Policies&#xa;• Roles&#xa;• MFA" vertex="1">
+          <mxGeometry height="240" width="240" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-36" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="AWS Account" vertex="1">
+          <mxGeometry height="60" width="140" x="770" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-37" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="IAM Service" vertex="1">
+          <mxGeometry height="60" width="120" x="780" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-38" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="Users&amp;nbsp; &amp;nbsp; &amp;nbsp;Groups&amp;nbsp; &amp;nbsp; &amp;nbsp;Policies&amp;nbsp; &amp;nbsp; &amp;nbsp;Roles" vertex="1">
+          <mxGeometry height="60" width="480" x="700" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-39" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="MFA" vertex="1">
+          <mxGeometry height="60" width="80" x="800" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-40" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="820" y="335" as="sourcePoint" />
+            <mxPoint x="819.9962962962961" y="305" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-41" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="820.0037037037039" y="200" as="sourcePoint" />
+            <mxPoint x="820" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-42" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="940" y="260" as="sourcePoint" />
+            <mxPoint x="940" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-43" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="120" y="480" as="sourcePoint" />
+            <mxPoint x="120" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-44" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="720" y="260" as="sourcePoint" />
+            <mxPoint x="720" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-45" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="799" y="260" as="sourcePoint" />
+            <mxPoint x="799" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-46" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="860" y="260" as="sourcePoint" />
+            <mxPoint x="860" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-47" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="720" y="240" as="sourcePoint" />
+            <mxPoint x="940" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;div style=&quot;text-align: left;&quot;&gt;📄 AdministratorAccess&lt;/div&gt;&lt;div&gt;│&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;👥 Administrators&lt;/span&gt;&lt;/div&gt;&lt;div&gt;│&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;👤 henry.admin&lt;/div&gt;&lt;div&gt;│&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;🔐 Virtual MFA&lt;/div&gt;&lt;div&gt;│&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;💻 AWS Console Login&lt;/div&gt;" link="AdministratorAccess&#xa;&#xa;        │&#xa;&#xa;Administrators&#xa;&#xa;        │&#xa;&#xa;henry.admin&#xa;&#xa;        │&#xa;&#xa;Virtual MFA&#xa;&#xa;        │&#xa;&#xa;AWS Console Login" id="RkqqRB1D3_INoxnpylVL-48">
+          <mxCell parent="1" style="text;whiteSpace=wrap;html=1;align=center;fontSize=14;" vertex="1">
+            <mxGeometry height="180" width="160" x="480" y="540" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-49" parent="1" style="text;whiteSpace=wrap;fontSize=16;" value="✓ Enable MFA&#xa;✓ Use IAM Groups&#xa;✓ Avoid Root User&#xa;✓ Least Privilege&#xa;✓ Managed Policies" vertex="1">
+          <mxGeometry height="180" width="280" x="1160" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-51" parent="1" style="editableCssRules=.*;sketch=0;html=1;verticalAlign=top;labelPosition=center;verticalLabelPosition=bottom;align=center;spacingTop=-6;fontSize=11;fontStyle=1;fontColor=#999999;shape=image;aspect=fixed;imageAspect=0;image=data:image/svg+xml,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnY9Imh0dHBzOi8vdmVjdGEuaW8vbmFubyIgd2lkdGg9IjE2LjQyMDAwMDA3NjI5Mzk0NSIgaGVpZ2h0PSIyMC4wNDk5OTkyMzcwNjA1NDciIGZpbGwtcnVsZT0iZXZlbm9kZCIgdmlld0JveD0iMCAwIDE2LjQyMDAwMDA3NjI5Mzk0NSAyMC4wNDk5OTkyMzcwNjA1NDciPiYjeGE7CTxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+JiN4YTsJLnN0MHtmaWxsOiM0Mjg1ZjQ7fSYjeGE7CS5zdDF7ZmlsbDojNjY5ZGY2O30mI3hhOwk8L3N0eWxlPiYjeGE7CTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik04LjIxIDBMMCAzLjQydjUuNjNjMCA1LjA2IDMuNSA5LjggOC4yMSAxMSA0LjcxLTEuMTUgOC4yMS01Ljg5IDguMjEtMTAuOTVWMy40MnptMCAzLjc5YTIuNjMgMi42MyAwIDAgMSAxLjAwNSA1LjA2QTIuNjMgMi42MyAwIDAgMSA2LjM1IDQuNTZhMi42MyAyLjYzIDAgMCAxIDEuODYtLjc3em00LjExIDExLjE1YTguNjQgOC42NCAwIDAgMS00LjExIDIuOTMgOC42NCA4LjY0IDAgMCAxLTQuMTEtMi45M3YtMi4yNWMwLTEuNjcgMi43NC0yLjUyIDQuMTEtMi41MnM0LjExLjg1IDQuMTEgMi41MnoiLz4mI3hhOwk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNOC4yMSAwdjMuNzlhMi42MyAyLjYzIDAgMSAxIDAgNS4yNnYxLjEyYzEuMzcgMCA0LjExLjg1IDQuMTEgMi41MnYyLjI1YTguNjQgOC42NCAwIDAgMS00LjExIDIuOTNWMjBjNC43MS0xLjE1IDguMjEtNS44OSA4LjIxLTEwLjk1VjMuNDJ6Ii8+JiN4YTs8L3N2Zz4=;" value="Cloud&#xa;IAM" vertex="1">
+          <mxGeometry height="66.71" width="54" x="280" y="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
