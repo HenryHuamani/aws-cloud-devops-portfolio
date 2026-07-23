@@ -47,7 +47,7 @@ This laboratory demonstrates how to build a secure and functional AWS network us
 
 See:
 
-architecture/export/lab04-vpc-architecture.png
+architecture/export/vpc.png
 
 ---
 
