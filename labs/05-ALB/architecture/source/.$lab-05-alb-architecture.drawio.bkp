@@ -1,0 +1,130 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="QNslGalEl4QgZ9oglIL7">
+    <mxGraphModel dx="1671" dy="965" grid="1" gridSize="20" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="q9i2-7_oWKg2bWcuqwcx-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" value="" vertex="1">
+          <mxGeometry height="860" width="1560" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="q9i2-7_oWKg2bWcuqwcx-1" parent="1" style="text;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;fontStyle=1;align=center;" value="AWS VPC Architecture" vertex="1">
+          <mxGeometry height="60" width="280" x="40" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="q9i2-7_oWKg2bWcuqwcx-4" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="20" y="800" as="sourcePoint" />
+            <mxPoint x="1580" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q9i2-7_oWKg2bWcuqwcx-6" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="20" y="100" as="sourcePoint" />
+            <mxPoint x="1580" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-2" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="30" y="502" as="sourcePoint" />
+            <mxPoint x="1592" y="502" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-3" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400.0028571428578" y="100" as="sourcePoint" />
+            <mxPoint x="400" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-6" parent="1" style="text;whiteSpace=wrap;" value="Repository&#xa;aws-cloud-devops-portfolio" vertex="1">
+          <mxGeometry height="60" width="160" x="80" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-13" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="Lab 04 – Amazon Virtual Private Cloud" vertex="1">
+          <mxGeometry height="80" width="320" x="60" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-14" parent="1" style="text;whiteSpace=wrap;html=1;" value="Version&#xa;v1.0" vertex="1">
+          <mxGeometry height="60" width="100" x="420" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-15" parent="1" style="text;whiteSpace=wrap;html=1;" value="Author&#xa;Henry Junior Huamani" vertex="1">
+          <mxGeometry height="60" width="180" x="660" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-16" parent="1" style="text;whiteSpace=wrap;html=1;" value="Updated&#xa;2026-07" vertex="1">
+          <mxGeometry height="60" width="100" x="940" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-21" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1120" y="500" as="sourcePoint" />
+            <mxPoint x="1120" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-23" parent="1" style="text;whiteSpace=wrap;html=1;" value="🟢 COMPLETED" vertex="1">
+          <mxGeometry height="30" width="100" x="1460" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="160" x="40" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-24" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="📘 Service Overview" vertex="1">
+          <mxGeometry height="60" width="160" x="40" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="160" x="420" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-25" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="🏗 Core Architecture" vertex="1">
+          <mxGeometry height="60" width="160" x="420" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="160" x="40" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-26" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="🧪 Laboratory" vertex="1">
+          <mxGeometry height="50" width="140" x="40" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="180" x="1140" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-27" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="🛡 AWS Best Practices" vertex="1">
+          <mxGeometry height="30" width="180" x="1140" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-49" parent="1" style="text;whiteSpace=wrap;fontSize=15;" value="✓ Least Privilege Security Groups&#xa;&#xa;✓ Public / Private Subnet Separation&#xa;&#xa;✓ Principle of Least Privilege&#xa;&#xa;✓ Restrict SSH to Trusted IPs&#xa;&#xa;✓ Automated EC2 Bootstrapping (Cloud-init)&#xa;&#xa;✓ Network Segmentation" vertex="1">
+          <mxGeometry height="120" width="320" x="1180" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="our0vixlmLQqi5LXvXJN-1" parent="1" style="text;whiteSpace=wrap;fontSize=15;fontStyle=0" value="Purpose&#xa;&#xa;✓ Build a custom VPC&#xa;✓ Network isolation&#xa;✓ Secure communication&#xa;✓ Internet connectivity&#xa;✓ EC2 deployment&#xa;&#xa;Main Components&#xa;&#xa;✓ Amazon VPC&#xa;✓ Public Subnet&#xa;✓ Private Subnet&#xa;✓ Internet Gateway&#xa;✓ Route Table&#xa;✓ Security Group&#xa;✓ Network ACL&#xa;✓ Amazon EC2" vertex="1">
+          <mxGeometry height="322" width="240" x="60" y="151.5" as="geometry" />
+        </mxCell>
+        <mxCell id="our0vixlmLQqi5LXvXJN-4" parent="1" style="text;whiteSpace=wrap;fontSize=14;align=center;fontStyle=0" value="Internet&#xa;↓&#xa;Internet Gateway&#xa;↓&#xa;&#xa;Amazon VPC&#xa;10.0.0.0/16&#xa;Public Route Table                                       &#xa;0.0.0.0/0 → IGW                                           &#xa;&#xa;Public                                                Private&#xa;10.0.1.0/24                                  10.0.2.0/24&#xa;         ↓                                            Reserved for&#xa;         Amazon EC2                               Future Database&#xa;  portfolio-web-server                     Apl. Tier       &#xa;Amazon Linux 2023                                       &#xa;Apache HTTP Server                                     &#xa;Security Group                                               &#xa;SSH :22                                                         &#xa;HTTP :80                                                        &#xa;&#xa;↓&#xa;Client Browser&#xa;" vertex="1">
+          <mxGeometry height="405" width="580" x="440" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="our0vixlmLQqi5LXvXJN-5" parent="1" style="text;whiteSpace=wrap;fontSize=12.5;align=center;" value="Create VPC&#xa;↓&#xa;Create Public Subnet&#xa;↓&#xa;Create Private Subnet&#xa;↓&#xa;Attach Internet Gateway&#xa;↓&#xa;Create Public Route Table&#xa;↓&#xa;Associate Public Subnet&#xa;↓&#xa;Create Security Group&#xa;↓&#xa;Launch EC2 Instance&#xa;↓&#xa;Bootstrap EC2(User Data)      &#xa;↓&#xa;Access Website" vertex="1">
+          <mxGeometry height="180" width="440" x="360" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="4uwm2NZyS1V1BbL9Z3g0-3" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="530" y="180" as="sourcePoint" />
+            <mxPoint x="930" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4uwm2NZyS1V1BbL9Z3g0-4" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="530" y="450" as="sourcePoint" />
+            <mxPoint x="930" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4uwm2NZyS1V1BbL9Z3g0-5" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="520" y="422.26" as="sourcePoint" />
+            <mxPoint x="520" y="202.74" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4uwm2NZyS1V1BbL9Z3g0-6" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="940" y="422.26" as="sourcePoint" />
+            <mxPoint x="940" y="202.74" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4uwm2NZyS1V1BbL9Z3g0-7" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;div&gt;AWS Region&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;us-east-2 (Ohio)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="1120" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="4uwm2NZyS1V1BbL9Z3g0-10" parent="1" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.virtual_private_cloud;fillColor=#F58534;gradientColor=none;" value="" vertex="1">
+          <mxGeometry height="90" width="120" x="260" y="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
