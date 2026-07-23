@@ -19,7 +19,7 @@
 
 This repository documents my professional learning journey in **Amazon Web Services (AWS)**, **Cloud Engineering**, **DevOps**, **Infrastructure as Code (IaC)**, and **Cloud Architecture** through hands-on laboratories, technical documentation, architecture diagrams, and real-world projects.
 
-The objective is to build a professional portfolio that demonstrates practical cloud engineering skills and supports future AWS certifications and technical interviews.
+The objective is to build a professional portfolio that demonstrates practical cloud engineering skills while preparing for AWS certifications and real-world technical interviews.
 
 ---
 
@@ -30,7 +30,7 @@ The objective is to build a professional portfolio that demonstrates practical c
 - Build Infrastructure as Code using Terraform.
 - Deploy applications using Docker and Kubernetes.
 - Implement CI/CD pipelines.
-- Build a production-ready enterprise cloud platform.
+- Develop production-ready cloud solutions following AWS Well-Architected Framework principles.
 
 ---
 
@@ -38,8 +38,8 @@ The objective is to build a professional portfolio that demonstrates practical c
 
 | Level | Area | Progress |
 |--------|------|:--------:|
-| Level 1 | Cloud Foundations | 🟨 |
-| Level 2 | Cloud Networking | ⬜ |
+| Level 1 | Cloud Foundations | 🟩 |
+| Level 2 | Cloud Networking | 🟨 |
 | Level 3 | Cloud Compute | ⬜ |
 | Level 4 | Cloud Databases | ⬜ |
 | Level 5 | Containers | ⬜ |
@@ -51,13 +51,25 @@ The objective is to build a professional portfolio that demonstrates practical c
 
 ---
 
-# 📚 Documentation
+# 📈 Learning Progress
 
-| Document | Description |
-|----------|-------------|
-| 📖 [ROADMAP.md](ROADMAP.md) | Complete learning roadmap |
-| 📋 [TEMPLATE.md](TEMPLATE.md) | Laboratory template |
-| 📝 [CHANGELOG.md](CHANGELOG.md) | Project version history |
+| Lab | AWS Service | Status |
+|------|-------------|:------:|
+| Lab 01 | AWS IAM | ✅ |
+| Lab 02 | Amazon EC2 | ✅ |
+| Lab 03 | Amazon S3 | ✅ |
+| Lab 04 | Amazon VPC | ✅ |
+| Lab 05 | Application Load Balancer | ⬜ |
+| Lab 06 | Auto Scaling | ⬜ |
+| Lab 07 | Amazon RDS | ⬜ |
+| Lab 08 | IAM Roles | ⬜ |
+| Lab 09 | CloudWatch | ⬜ |
+| Lab 10 | CloudTrail | ⬜ |
+| Lab 11 | Docker | ⬜ |
+| Lab 12 | Terraform | ⬜ |
+| Lab 13 | Kubernetes | ⬜ |
+| Lab 14 | GitHub Actions | ⬜ |
+| Lab 15 | Enterprise Cloud Platform | ⬜ |
 
 ---
 
@@ -65,51 +77,91 @@ The objective is to build a professional portfolio that demonstrates practical c
 
 | Laboratory | Description | Status |
 |------------|-------------|:------:|
-| [01 - AWS IAM](labs/01-IAM/README.md) | Identity and Access Management | ✅ |
-| [02 - Amazon EC2](labs/02-EC2/README.md) | Virtual Server Deployment and SSH | ✅ |
-| 03 - Amazon S3 | Object Storage | ⬜ |
-| 04 - Amazon VPC | Networking | ⬜ |
-| 05 - Amazon RDS | Relational Database | ⬜ |
-| 06 - IAM Roles | Roles and Permissions | ⬜ |
-| 07 - CloudWatch | Monitoring | ⬜ |
-| 08 - CloudTrail | Auditing | ⬜ |
-| 09 - Docker | Containers | ⬜ |
-| 10 - Terraform | Infrastructure as Code | ⬜ |
-| 11 - Kubernetes | Container Orchestration | ⬜ |
-| 12 - GitHub Actions | CI/CD | ⬜ |
-| 13 - Jenkins | CI/CD | ⬜ |
-| 14 - Ansible | Configuration Management | ⬜ |
-| 15 - Enterprise Project | Production AWS Platform | ⬜ |
+| [Lab 01 – AWS IAM](labs/01-IAM/README.md) | Identity and Access Management | ✅ |
+| [Lab 02 – Amazon EC2](labs/02-EC2/README.md) | Virtual Server Deployment and SSH | ✅ |
+| [Lab 03 – Amazon S3](labs/03-S3/README.md) | Object Storage | ✅ |
+| [Lab 04 – Amazon VPC](labs/04-VPC/README.md) | Cloud Networking Fundamentals | ✅ |
+| Lab 05 – Application Load Balancer | High Availability | ⬜ |
+| Lab 06 – Auto Scaling | Elastic Compute | ⬜ |
+| Lab 07 – Amazon RDS | Relational Database | ⬜ |
+| Lab 08 – IAM Roles | Roles and Permissions | ⬜ |
+| Lab 09 – CloudWatch | Monitoring | ⬜ |
+| Lab 10 – CloudTrail | Auditing | ⬜ |
+| Lab 11 – Docker | Containers | ⬜ |
+| Lab 12 – Terraform | Infrastructure as Code | ⬜ |
+| Lab 13 – Kubernetes | Container Orchestration | ⬜ |
+| Lab 14 – GitHub Actions | CI/CD Pipelines | ⬜ |
+| Lab 15 – Enterprise Cloud Platform | Final Project | ⬜ |
 
 ---
 
-# 🛠️ Technologies
+# ⭐ Featured Skills
 
-### Cloud
+- AWS Identity and Access Management (IAM)
+- Amazon EC2
+- Amazon S3
+- Amazon VPC
+- Linux Administration
+- SSH
+- Cloud Networking
+- Cloud Architecture Documentation
+- Infrastructure Design
+- Technical Documentation
+
+---
+
+# 📚 Documentation
+
+| Document | Description |
+|----------|-------------|
+| 📖 [ROADMAP.md](ROADMAP.md) | Complete learning roadmap |
+| 📋 [TEMPLATE.md](TEMPLATE.md) | Laboratory template |
+| 📝 [CHANGELOG.md](CHANGELOG.md) | Repository version history |
+
+---
+
+# 🛠 Technologies
+
+## ☁️ Cloud
 
 - Amazon Web Services (AWS)
 
-### Infrastructure
+## 🌐 Networking
+
+- Amazon VPC
+- Route Tables
+- Internet Gateway
+- Security Groups
+
+## 💻 Compute
+
+- Amazon EC2
+
+## 💾 Storage
+
+- Amazon S3
+
+## ⚙️ Infrastructure
 
 - Terraform
 - Linux
 - Bash
 
-### Containers
+## 📦 Containers
 
 - Docker
 - Kubernetes
 
-### DevOps
+## 🚀 DevOps
 
 - Git
 - GitHub
 - GitHub Actions
 - Jenkins
 
-### Monitoring
+## 📈 Monitoring
 
-- CloudWatch
+- Amazon CloudWatch
 - Prometheus
 - Grafana
 
@@ -118,17 +170,17 @@ The objective is to build a professional portfolio that demonstrates practical c
 # 📂 Repository Structure
 
 ```text
-aws-cloud-devops-portfolio
+aws-cloud-devops-portfolio/
 │
 ├── README.md
 ├── ROADMAP.md
-├── TEMPLATE.md
 ├── CHANGELOG.md
 ├── docs/
-├── labs/
 ├── diagrams/
+├── labs/
+├── projects/
 ├── scripts/
-└── projects/
+└── templates/
 ```
 
 ---
@@ -136,18 +188,19 @@ aws-cloud-devops-portfolio
 # 🎓 Certification Roadmap
 
 - ⬜ AWS Certified Cloud Practitioner
-- ⬜ AWS Solutions Architect – Associate
-- ⬜ AWS Developer – Associate
-- ⬜ AWS SysOps Administrator – Associate
+- ⬜ AWS Certified Solutions Architect – Associate
+- ⬜ AWS Certified Developer – Associate
+- ⬜ AWS Certified SysOps Administrator – Associate
 - ⬜ HashiCorp Terraform Associate
-- ⬜ AWS DevOps Engineer – Professional
+- ⬜ Certified Kubernetes Administrator (CKA)
+- ⬜ AWS Certified DevOps Engineer – Professional
 
 ---
 
 # 📊 Current Version
 
 ```text
-v1.0.0
+v1.2.0
 ```
 
 ---
@@ -162,4 +215,4 @@ Software Architect • Cloud & DevOps Engineer
 
 ---
 
-> 🚀 This repository is continuously updated as part of my professional journey to become an AWS Solutions Architect and DevOps Engineer.
+> 🚀 This repository is continuously updated to document my journey toward becoming an AWS Solutions Architect and DevOps Engineer through hands-on laboratories, technical documentation, and real-world cloud projects.
