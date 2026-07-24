@@ -59,8 +59,8 @@ The objective is to build a professional portfolio that demonstrates practical c
 | Lab 02 | Amazon EC2 | ✅ |
 | Lab 03 | Amazon S3 | ✅ |
 | Lab 04 | Amazon VPC | ✅ |
-| Lab 05 | Application Load Balancer | ⬜ |
-| Lab 06 | Auto Scaling | ⬜ |
+| Lab 05 | Application Load Balancer | ✅ |
+| Lab 06 | Auto Scaling | ✅ |
 | Lab 07 | Amazon RDS | ⬜ |
 | Lab 08 | IAM Roles | ⬜ |
 | Lab 09 | CloudWatch | ⬜ |
@@ -81,8 +81,8 @@ The objective is to build a professional portfolio that demonstrates practical c
 | [Lab 02 – Amazon EC2](labs/02-EC2/README.md) | Virtual Server Deployment and SSH | ✅ |
 | [Lab 03 – Amazon S3](labs/03-S3/README.md) | Object Storage | ✅ |
 | [Lab 04 – Amazon VPC](labs/04-VPC/README.md) | Cloud Networking Fundamentals | ✅ |
-| Lab 05 – Application Load Balancer | High Availability | ⬜ |
-| Lab 06 – Auto Scaling | Elastic Compute | ⬜ |
+| [Lab 05 – Application Load Balancer](labs/05-ALB/README.md) | Traffic Distribution and High Availability | ✅ |
+| [Lab 06 – Amazon EC2 Auto Scaling](labs/06-ASG/README.md) | Elastic Compute and Automatic Recovery | ✅ |
 | Lab 07 – Amazon RDS | Relational Database | ⬜ |
 | Lab 08 – IAM Roles | Roles and Permissions | ⬜ |
 | Lab 09 – CloudWatch | Monitoring | ⬜ |
@@ -114,8 +114,8 @@ The objective is to build a professional portfolio that demonstrates practical c
 
 | Document | Description |
 |----------|-------------|
-| 📖 [ROADMAP.md](ROADMAP.md) | Complete learning roadmap |
-| 📋 [TEMPLATE.md](TEMPLATE.md) | Laboratory template |
+| 📖 [Roadmap](docs/roadmap.md)| Complete learning roadmap |
+| 📋 [Laboratory template](templates/aws-lab-template/README.md)| Laboratory template |
 | 📝 [CHANGELOG.md](CHANGELOG.md) | Repository version history |
 
 ---

@@ -47,7 +47,7 @@ This laboratory demonstrates how to build a secure and functional AWS network us
 
 The complete architecture diagram is available below.
 
-![Amazon VPC Architecture](architecture/export/vpc.png)
+![Amazon VPC Architecture](architecture/vpc.png)
 
 ---
 

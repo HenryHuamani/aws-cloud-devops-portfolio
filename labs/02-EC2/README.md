@@ -54,13 +54,13 @@ Typical use cases include:
 
 The architecture for this laboratory is available in:
 
-![AWS IAM Architecture](architecture/export/ec2.png)
+![Amazon EC2 Architecture](architecture/ec2.png)
 
 ## Files
 
-- `architecture/source/ec2.drawio`
-- `architecture/export/ec2.png`
-- `architecture/export/ec2.svg`
+- `diagrams/ec2.drawio`
+- `architecture/ec2.png`
+- `architecture/ec2.svg`
 
 ---
 

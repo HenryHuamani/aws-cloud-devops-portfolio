@@ -2,4 +2,4 @@
 
 ## Architecture
 
-![Architecture](architecture/export/lab-05-alb-architecture.png)
+![Architecture](lab-05-alb-architecture.png)

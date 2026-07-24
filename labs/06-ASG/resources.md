@@ -48,13 +48,13 @@ The architecture was designed to achieve the following objectives:
 The architecture diagram for this laboratory is located in:
 
 ```
-architecture/export/
+architecture/
 ```
 
 The editable Draw.io source file is available in:
 
 ```
-architecture/source/
+architecture/
 ```
 
 The diagram illustrates every AWS component used during the laboratory together with the logical communication flow.

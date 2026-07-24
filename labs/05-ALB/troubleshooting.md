@@ -441,7 +441,7 @@ Editing the User Data after the instance has already launched does not automatic
 For testing purposes, the script can be copied and run manually:
 
 ```bash
-sudo bash userdata.sh
+sudo bash scripts/user-data.sh
 ```
 
 ### Solution

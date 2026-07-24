@@ -32,7 +32,7 @@ By completing this laboratory you will learn how to:
 
 The complete architecture diagram is available below.
 
-![Amazon S3 Architecture](architecture/export/s3.png)
+![Amazon S3 Architecture](architecture/s3.png)
 
 Additional files:
 

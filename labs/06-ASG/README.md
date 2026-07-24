@@ -395,7 +395,7 @@ Lab-06-EC2-Auto-Scaling/
 
 The complete bootstrap script is available in:
 
-scripts/userdata.sh
+scripts/user-data.sh
 
 ---
 

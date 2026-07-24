@@ -15,7 +15,7 @@ deployed in different Availability Zones within the same Amazon VPC.
 
 ## Architecture Diagram
 
-![Application Load Balancer Architecture](export/lab-05-alb-architecture.png)
+![Application Load Balancer Architecture](architecture/lab-05-alb-architecture.png)
 
 ---
 

@@ -5,7 +5,7 @@ The EC2 instances were configured using a reusable User Data script.
 Location:
 
 ```text
-scripts/userdata.sh
+scripts/user-data.sh
 ```
 
 Before launching each EC2 instance, the following variables were updated according to the target Availability Zone:
