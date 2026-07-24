@@ -1,0 +1,136 @@
+<mxfile host="Electron">
+  <diagram name="Página-1" id="QNslGalEl4QgZ9oglIL7">
+    <mxGraphModel dx="1671" dy="965" grid="1" gridSize="20" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="q9i2-7_oWKg2bWcuqwcx-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" value="" vertex="1">
+          <mxGeometry height="860" width="1560" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="q9i2-7_oWKg2bWcuqwcx-1" parent="1" style="text;whiteSpace=wrap;fontFamily=Helvetica;fontSize=22;fontStyle=1;align=center;" value="AWS AUTO SCALING ARCHITECTURE" vertex="1">
+          <mxGeometry height="60" width="440" x="40" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="q9i2-7_oWKg2bWcuqwcx-4" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="20" y="800" as="sourcePoint" />
+            <mxPoint x="1580" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q9i2-7_oWKg2bWcuqwcx-6" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="20" y="100" as="sourcePoint" />
+            <mxPoint x="1580" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-2" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="30" y="502" as="sourcePoint" />
+            <mxPoint x="1592" y="502" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-3" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400.0028571428578" y="100" as="sourcePoint" />
+            <mxPoint x="400" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-6" parent="1" style="text;whiteSpace=wrap;" value="Repository&#xa;aws-cloud-devops-portfolio" vertex="1">
+          <mxGeometry height="60" width="160" x="80" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-13" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="Lab 06 – EC2 Auto Scaling Group" vertex="1">
+          <mxGeometry height="80" width="320" x="60" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-14" parent="1" style="text;whiteSpace=wrap;html=1;" value="Version&lt;br&gt;v1.3.0" vertex="1">
+          <mxGeometry height="60" width="100" x="420" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-15" parent="1" style="text;whiteSpace=wrap;html=1;" value="Author&#xa;Henry Junior Huamani" vertex="1">
+          <mxGeometry height="60" width="180" x="660" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-16" parent="1" style="text;whiteSpace=wrap;html=1;" value="Updated&#xa;2026-07" vertex="1">
+          <mxGeometry height="60" width="100" x="940" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-21" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1120" y="500" as="sourcePoint" />
+            <mxPoint x="1120" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-23" parent="1" style="text;whiteSpace=wrap;html=1;" value="🟢 COMPLETED" vertex="1">
+          <mxGeometry height="30" width="100" x="1460" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="160" x="40" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-24" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="📘 Service Overview" vertex="1">
+          <mxGeometry height="60" width="160" x="40" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-30" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="160" x="420" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-25" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="🏗 Core Architecture" vertex="1">
+          <mxGeometry height="60" width="160" x="420" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-31" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="180" x="40" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-26" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="🧪 Laboratory&amp;nbsp;Workflow" vertex="1">
+          <mxGeometry height="50" width="180" x="40" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="30" width="180" x="1140" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-27" parent="1" style="text;whiteSpace=wrap;html=1;fontSize=16;" value="🛡 AWS Best Practices" vertex="1">
+          <mxGeometry height="30" width="180" x="1140" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="RkqqRB1D3_INoxnpylVL-49" parent="1" style="text;whiteSpace=wrap;fontSize=15;" value="✓ Launch Templates&#xa;✓ Multi-AZ Deployment&#xa;✓ Auto Scaling&#xa;✓ Elastic Load Balancing&#xa;✓ Health Checks&#xa;✓ High Availability&#xa;✓ Fault Tolerance&#xa;✓ Desired Capacity" vertex="1">
+          <mxGeometry height="140" width="320" x="1200" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="our0vixlmLQqi5LXvXJN-1" parent="1" style="text;whiteSpace=wrap;fontSize=15;fontStyle=0" value="Purpose&#xa;&#xa;✓ Automatically launch EC2 instances&#xa;✓ Maintain desired capacity&#xa;✓ Increase application availability&#xa;✓ Distribute incoming HTTP traffic&#xa;✓ Deploy across multiple Availability Zones&#xa;&#xa;Main Components&#xa;✔ Application Load Balancer&#xa;&#xa;✔ Target Group&#xa;✔ Auto Scaling Group&#xa;✔ Launch Template&#xa;✔ EC2 Instance&#xa;✔ Health Checks&#xa;✔ VPC&#xa;✔ Public Subnet A&#xa;✔ Public Subnet B" vertex="1">
+          <mxGeometry height="353.5" width="340" x="40" y="146.5" as="geometry" />
+        </mxCell>
+        <mxCell id="our0vixlmLQqi5LXvXJN-4" parent="1" style="text;whiteSpace=wrap;fontSize=15;align=center;fontStyle=0" value="Internet&#xa;↓&#xa;Amazon VPC&#xa;portfolio-vpc | 10.0.0.0/16&#xa;&#xa;Application Load Balancer&#xa;portfolio-alb&#xa;↓&#xa;Target Group&#xa;portfolio-web-tg&#xa;↓&#xa;Auto Scaling Group&#xa;portfolio-asg&#xa;Desired: 2 | Min: 2 |Max: 4&#xa;|&#xa;Launch Template&#xa;portfolio-web-template&#xa;|&#xa;↓                                                        ↓&#xa;          Public Subnet A                              Public Subnet B&#xa;                         10.0.1.0/24 | Amazon EC2             10.0.3.0/24 | Amazon EC2&#xa; &#xa;&#xa;" vertex="1">
+          <mxGeometry height="405" width="580" x="620" y="105" as="geometry" />
+        </mxCell>
+        <mxCell id="our0vixlmLQqi5LXvXJN-5" parent="1" style="text;whiteSpace=wrap;fontSize=14;align=center;" value="Create Launch Template&#xa;        │&#xa;Configure User Data&#xa;        │&#xa;Create Auto Scaling Group&#xa;        │&#xa;Attach Application Load Balancer&#xa;        │&#xa;Associate Target Group&#xa;        │&#xa;Launch EC2 Instances&#xa;        │&#xa;Verify Target Health&#xa;        │&#xa;Test ALB DNS Name" vertex="1">
+          <mxGeometry height="298" width="440" x="360" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="4uwm2NZyS1V1BbL9Z3g0-7" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;div&gt;AWS Region&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;us-east-2 (Ohio)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="1120" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="sq9WocrYivkPpPKrmS6F-4" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="800" y="440" as="sourcePoint" />
+            <mxPoint x="1020" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sq9WocrYivkPpPKrmS6F-13" parent="1" style="text;whiteSpace=wrap;html=1;" value="AWS Service&lt;br&gt;Elastic Load Balancing (ELB)" vertex="1">
+          <mxGeometry height="60" width="160" x="1320" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="GA9nfu_SWBaow35LZuSD-1" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="704" y="148.5" as="sourcePoint" />
+            <mxPoint x="1164" y="148.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GA9nfu_SWBaow35LZuSD-3" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1169.41" y="486.5" as="sourcePoint" />
+            <mxPoint x="1169.41" y="151.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GA9nfu_SWBaow35LZuSD-4" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="700.0000000000001" y="486.5" as="sourcePoint" />
+            <mxPoint x="700.0000000000001" y="151.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GA9nfu_SWBaow35LZuSD-5" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="704" y="494" as="sourcePoint" />
+            <mxPoint x="1164" y="494" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
