@@ -360,6 +360,136 @@ These topics will be covered in future laboratories of this portfolio.
 
 ---
 
+## Validation
+
+- Successfully accessed the web application over HTTP.
+- Verified EC2 health status.
+- Verified Auto Scaling Group health.
+- Confirmed Apache web server availability.
+- Confirmed instance launched from Launch Template.
+- Verified Security Group rules.
+- Verified Route Table and Internet Gateway configuration.
+- Confirmed public IP assignment.
+
+---
+
+## Real-World Troubleshooting
+
+### SSH Connection Timeout Due to Source IP Mismatch
+
+#### Issue
+
+After deploying the Amazon EC2 Auto Scaling environment, the web application was accessible over HTTP, but every SSH connection attempt resulted in a connection timeout.
+
+```bash
+ssh -i "henry-key.pem" ec2-user@<PUBLIC_IP>
+
+ssh: connect to host <PUBLIC_IP> port 22: Connection timed out
+```
+
+#### Investigation
+
+A systematic troubleshooting process was performed to isolate the root cause.
+
+The following components were verified:
+
+- EC2 instance status
+- Launch Template
+- Auto Scaling Group
+- Amazon Linux 2023
+- SSH daemon (`sshd`)
+- Security Groups
+- Network ACLs
+- Route Tables
+- Internet Gateway
+- Public Subnet configuration
+- Public IP assignment
+- Key Pair
+- Local firewall
+- Antivirus and VPN software
+
+All infrastructure components were correctly configured.
+
+#### Root Cause
+
+Initially, the Security Group allowed SSH access only from the public IP returned by:
+
+```powershell
+curl https://checkip.amazonaws.com
+```
+
+which returned:
+
+```text
+190.43.149.200
+```
+
+However, after temporarily allowing SSH from anywhere (`0.0.0.0/0`), the actual source IP was identified from the EC2 login history:
+
+```bash
+last -i
+```
+
+Output:
+
+```text
+ec2-user pts/0 190.43.252.173
+ec2-user pts/1 190.43.252.173
+```
+
+The SSH traffic originated from **190.43.252.173**, while the Security Group allowed only **190.43.149.200/32**.
+
+As a result, AWS correctly dropped all incoming SSH connections.
+
+#### Resolution
+
+SSH access was temporarily opened from:
+
+```text
+0.0.0.0/0
+```
+
+Once connectivity was restored, the actual client IP was identified and the Security Group could be updated with the correct source address.
+
+#### Lessons Learned
+
+- Never assume that the IP returned by `checkip.amazonaws.com` is the same IP used by SSH traffic.
+- Different protocols may leave the network using different public IP addresses depending on ISP routing, CGNAT, VPNs, or enterprise network policies.
+- Always verify the real client IP from the server side before restricting Security Group rules.
+- A structured troubleshooting methodology helps isolate networking issues efficiently without making unnecessary infrastructure changes.
+
+---
+
+## Key Takeaways
+
+- Designed a highly available web infrastructure using Amazon EC2 Auto Scaling.
+- Implemented a Launch Template for standardized deployments.
+- Configured Security Groups following the principle of least privilege.
+- Integrated an Application Load Balancer with an Auto Scaling Group.
+- Performed end-to-end infrastructure validation.
+- Diagnosed and resolved a real-world SSH connectivity issue caused by an incorrect source IP restriction.
+- Strengthened troubleshooting skills across compute, networking, and security services.
+
+---
+
+## Skills Demonstrated
+
+- Amazon EC2
+- Launch Templates
+- Auto Scaling Groups
+- Elastic Load Balancer (ALB)
+- Security Groups
+- VPC Networking
+- Route Tables
+- Internet Gateway
+- Linux Administration
+- Apache HTTP Server
+- SSH
+- Infrastructure Troubleshooting
+- High Availability Design
+
+---
+
 # References
 
 - AWS Documentation – Amazon EC2 Auto Scaling
