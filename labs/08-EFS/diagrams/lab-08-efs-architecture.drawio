@@ -1,0 +1,32 @@
+<mxfile host="app.diagrams.net"><diagram id="lab08efs" name="Lab 08 - Amazon EFS Architecture"><mxGraphModel dx="1800" dy="1100" grid="1" gridSize="10" page="1" pageWidth="1800" pageHeight="1100"><root><mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="internet" value="Internet" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="60" y="60" width="150" height="60" as="geometry"/></mxCell><mxCell id="alb" value="Application Load Balancer
+portfolio-alb" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="300" y="45" width="220" height="85" as="geometry"/></mxCell><mxCell id="tg" value="Target Group
+portfolio-web-tg" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="300" y="165" width="220" height="75" as="geometry"/></mxCell><mxCell id="azA" value="Availability Zone us-east-2a" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;dashed=1;verticalAlign=top;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="50" y="290" width="560" height="430" as="geometry"/></mxCell><mxCell id="azB" value="Availability Zone us-east-2b" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;dashed=1;verticalAlign=top;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="650" y="290" width="560" height="430" as="geometry"/></mxCell><mxCell id="pubA" value="Public Subnet A
+10.0.1.0/24" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="90" y="335" width="480" height="60" as="geometry"/></mxCell><mxCell id="pubB" value="Public Subnet B
+10.0.2.0/24" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="690" y="335" width="480" height="60" as="geometry"/></mxCell><mxCell id="ec2A" value="EC2 Instance A (Web Server)
+Auto Scaling Group
+Local: /var/www/html/index.html
+Shared: /var/www/html/shared" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="100" y="440" width="460" height="150" as="geometry"/></mxCell><mxCell id="ec2B" value="EC2 Instance B (Web Server)
+Auto Scaling Group
+Local: /var/www/html/index.html
+Shared: /var/www/html/shared" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="700" y="440" width="460" height="150" as="geometry"/></mxCell><mxCell id="mtA" value="EFS Mount Target A
+us-east-2a" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="140" y="630" width="300" height="65" as="geometry"/></mxCell><mxCell id="mtB" value="EFS Mount Target B
+us-east-2b" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="820" y="630" width="300" height="65" as="geometry"/></mxCell><mxCell id="efs" value="Amazon EFS (Regional)
+novacommerce-efs
+fs-04a66a073c14f5d1c
+/mnt/efs/shared" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="455" y="770" width="350" height="110" as="geometry"/></mxCell><mxCell id="rds" value="Amazon RDS MySQL
+novacommerce-db
+TCP 3306" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="455" y="930" width="350" height="90" as="geometry"/></mxCell><mxCell id="sg" value="Security Groups
+ALB SG: HTTP 80 from Internet
+Web SG: HTTP 80 from ALB SG
+EFS SG: NFS 2049 from Web SG" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1260" y="300" width="390" height="150" as="geometry"/></mxCell><mxCell id="info" value="EFS Mount Information
+Mount: /mnt/efs
+Shared: /mnt/efs/shared
+Symlink: /var/www/html/shared
+fstab: EFS mounted with _netdev,tls" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1260" y="490" width="390" height="180" as="geometry"/></mxCell><mxCell id="benefits" value="Architecture Benefits
+Replaceable compute
+Shared persistent storage
+Multi-AZ architecture
+Automated bootstrap
+Encryption at rest
+TLS in transit
+Least privilege" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1"><mxGeometry x="1260" y="710" width="390" height="210" as="geometry"/></mxCell><mxCell id="e0" value="HTTP :80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="internet" target="alb"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e1" value="HTTP :80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="alb" target="tg"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e2" value="HTTP :80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="tg" target="ec2A"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e3" value="HTTP :80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="tg" target="ec2B"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e4" value="NFS :2049" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="ec2A" target="mtA"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e5" value="NFS :2049" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="ec2B" target="mtB"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e6" value="EFS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="mtA" target="efs"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e7" value="EFS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="mtB" target="efs"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e8" value="MySQL :3306" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="ec2A" target="rds"><mxGeometry relative="1" as="geometry"/></mxCell><mxCell id="e9" value="MySQL :3306" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="ec2B" target="rds"><mxGeometry relative="1" as="geometry"/></mxCell></root></mxGraphModel></diagram></mxfile>
