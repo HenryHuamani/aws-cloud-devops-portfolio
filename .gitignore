@@ -5,7 +5,25 @@
 # Terraform
 .terraform/
 *.tfstate
-*.tfstate.backup
+*.tfstate.*
+*.tfplan
+tfplan
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Terraform variable files
+# These may contain credentials or environment-specific values
+*.tfvars
+*.tfvars.json
+
+# Allow safe example variable files
+!*.tfvars.example
+
+# Terraform CLI configuration
+.terraformrc
+terraform.rc
 
 # VS Code
 .vscode/
