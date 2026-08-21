@@ -6,7 +6,7 @@
 
 ![Status](https://img.shields.io/badge/Status-Active%20Development-orange)
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
-![Terraform](https://img.shields.io/badge/Terraform-Roadmap-623CE4)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-623CE4)
 ![Docker](https://img.shields.io/badge/Docker-Roadmap-2496ED)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-Roadmap-326CE5)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-Roadmap-2088FF)
@@ -42,7 +42,6 @@ The next stage of the portfolio focuses on expanding the current AWS infrastruct
 
 - IAM Roles and advanced access control
 - AWS CloudTrail
-- Terraform
 - Docker
 - GitHub Actions
 - Kubernetes
@@ -72,7 +71,7 @@ This portfolio is structured around technical capabilities commonly required in 
 | 📈 Monitoring | CloudWatch, Metrics, Alarms, SNS | CloudWatch laboratory |
 | 🔧 Reliability Engineering | Health checks, Auto Scaling, instance replacement, monitoring, recovery testing | ASG and CloudWatch laboratories |
 | 🐧 Automation | Linux, Bash, User Data scripts | EC2, ALB, ASG and monitoring laboratories |
-| 🏗 Infrastructure as Code | Terraform | Roadmap |
+| 🏗 Infrastructure as Code | Terraform | Lab 10 – Terraform |
 | 📦 Containers | Docker | Roadmap |
 | ☸️ Orchestration | Kubernetes | Roadmap |
 | 🚀 CI/CD | GitHub Actions, Jenkins | Roadmap |
@@ -110,8 +109,8 @@ The emphasis is on **hands-on implementation, technical evidence, troubleshootin
 | Level 7 | Relational Databases | ✅ |
 | Level 8 | Shared Storage | ✅ |
 | Level 9 | Monitoring & Observability | ✅ |
-| Level 10 | Advanced IAM & Cloud Auditing | ⬜ |
-| Level 11 | Infrastructure as Code | ⬜ |
+| Level 10 | Infrastructure as Code – Terraform | ✅ |
+| Level 11 | Advanced IAM & Cloud Auditing | ⬜ |
 | Level 12 | Containers | ⬜ |
 | Level 13 | CI/CD & Deployment Automation | ⬜ |
 | Level 14 | Kubernetes | ⬜ |
@@ -141,9 +140,9 @@ The emphasis is on **hands-on implementation, technical evidence, troubleshootin
 | Lab 07 | Amazon RDS | Managed Relational Databases | ✅ |
 | Lab 08 | Amazon EFS | Shared & Persistent Storage | ✅ |
 | Lab 09 | Amazon CloudWatch | Monitoring, Alerting & Reliability Validation | ✅ |
-| Lab 10 | IAM Roles & Least Privilege | Secure AWS Service Access | ⬜ |
-| Lab 11 | AWS CloudTrail | Auditing & Governance | ⬜ |
-| Lab 12 | Terraform | Infrastructure as Code | ⬜ |
+| Lab 10 | Terraform | Infrastructure as Code & Multi-AZ VPC | ✅ |
+| Lab 11 | IAM Roles & Least Privilege | Secure AWS Service Access | ⬜ |
+| Lab 12 | AWS CloudTrail | Auditing & Governance | ⬜ |
 | Lab 13 | Docker | Containerization | ⬜ |
 | Lab 14 | GitHub Actions | CI/CD Automation | ⬜ |
 | Lab 15 | Kubernetes | Container Orchestration | ⬜ |
@@ -166,9 +165,9 @@ The emphasis is on **hands-on implementation, technical evidence, troubleshootin
 | [Lab 07 – Amazon RDS](labs/07-RDS/README.md) | Managed Relational Database and Private Connectivity | ✅ |
 | [Lab 08 – Amazon EFS](labs/08-EFS/README.md) | Shared Storage across Scalable EC2 Infrastructure | ✅ |
 | [Lab 09 – Amazon CloudWatch](labs/09-CLOUDWATCH/README.md) | Monitoring, Alarms, Scaling and Recovery Validation | ✅ |
-| Lab 10 – IAM Roles & Least Privilege | Secure Service-to-Service Access | ⬜ |
-| Lab 11 – AWS CloudTrail | Auditing and Cloud Governance | ⬜ |
-| Lab 12 – Terraform | Infrastructure as Code | ⬜ |
+| [Lab 10 – Terraform](labs/10-TERRAFORM/README.md) | AWS Infrastructure as Code and Multi-AZ VPC Architecture | ✅ |
+| Lab 11 – IAM Roles & Least Privilege | Secure Service-to-Service Access | ⬜ |
+| Lab 12 – AWS CloudTrail | Auditing and Cloud Governance | ⬜ |
 | Lab 13 – Docker | Application Containerization | ⬜ |
 | Lab 14 – GitHub Actions | CI/CD Pipelines | ⬜ |
 | Lab 15 – Kubernetes | Container Orchestration | ⬜ |
@@ -426,6 +425,7 @@ aws-cloud-devops-portfolio/
 │   ├── 07-RDS/
 │   ├── 08-EFS/
 │   └── 09-CLOUDWATCH/
+│   └── 10-TERRAFORM/
 │
 └── templates/
     └── aws-lab-template/
@@ -492,7 +492,7 @@ lab/
 
 ### ⚙️ Infrastructure as Code
 
-- Terraform ⬜
+- Terraform ✅
 
 ### 📦 Containers
 
@@ -542,9 +542,9 @@ Practical implementation remains the primary focus of this portfolio, with certi
 # 📊 Current Portfolio Status
 
 ```text
-Completed AWS Labs:      9
+Completed AWS Labs:      10
 AWS Core Infrastructure: ████████████████████  Strong Foundation
-Infrastructure as Code:  ░░░░░░░░░░░░░░░░░░░░  Next Phase
+Infrastructure as Code:  ████████████████████  Terraform Implemented
 Containers:              ░░░░░░░░░░░░░░░░░░░░  Planned
 CI/CD:                   ░░░░░░░░░░░░░░░░░░░░  Planned
 Kubernetes:              ░░░░░░░░░░░░░░░░░░░░  Planned
@@ -556,7 +556,7 @@ SRE / DevSecOps:         ░░░░░░░░░░░░░░░░░░�
 # 📊 Current Version
 
 ```text
-v1.3.0
+v1.4.0
 ```
 
 ---

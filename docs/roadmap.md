@@ -113,11 +113,35 @@ The goal is to build a professional portfolio that demonstrates practical experi
 
 ### Topics
 
-- Terraform
-- Variables
-- Modules
-- State
-- Remote Backend
+- Terraform ✅
+- Variables ✅
+- Modules ✅
+- Local State Management ✅
+- Remote Backend ⬜
+
+### Laboratories
+
+- Lab 10 – Terraform AWS VPC Infrastructure as Code ✅
+  - Custom VPC provisioning
+  - Public and private subnets
+  - Multi-AZ network architecture
+  - Internet Gateway
+  - Public and private route tables
+  - Reusable Terraform modules
+  - Terraform variables and outputs
+  - Terraform state management
+  - Infrastructure validation with AWS CLI
+  - Terraform idempotency validation
+
+### Next Steps
+
+- Remote Terraform backend
+- Amazon S3 state storage
+- DynamoDB state locking
+- Environment separation
+- Advanced module composition
+
+---
 
 ---
 
